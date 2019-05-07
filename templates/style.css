@@ -1,0 +1,117 @@
+.body
+{
+  background-color: rgb(161, 161, 161);
+}
+.first{
+    background-color: rgb(94, 185, 155);;
+    font-size: 20px;
+    color:white
+}
+
+.second{
+    background-color: white;
+    font-size: 20px;
+}
+
+.fourth{
+    background-color: white;
+    font-size: 20px;
+    text-decoration : none;
+}
+
+
+.fifth{
+    background-color: white;
+    font-size: 20px;
+    color: black;
+    text-decoration : none;
+}
+
+.sixth{
+    background-color: white;
+    font-size: 20px;
+    text-decoration : none;
+}
+
+.first2{
+  background-color: white;
+    color:rgb(94, 185, 155);
+    width: 40%;
+    display: block;
+}
+
+.second2{
+  background-color: white;
+    color:rgb(94, 185, 155);
+    width: 40%;
+    display: block    
+}
+
+.greenColor
+{
+  background-color: rgb(94, 185, 155);
+  color: white;
+}
+.grayColor
+{
+ background-color: rgb(161, 161, 161);
+}
+
+.blackText
+{
+    color: black;
+}
+
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 2px
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(94, 185, 155);
+    color: white;
+  }
+ 
+  .box {
+    padding: 10px;
+    margin: 1px;
+    font-weight: 100;
+    color: rgb(94, 185, 155);
+  }
+  
+  .white {
+    background:white;
+  }
+  .whiteFont
+  {
+    background-color: gray;
+    color:white;
+  }
+
+  .navbar-white .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;..");
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 30px;
+    line-height: 20px; /* Vertically center the text there */
+    background-color: #080808;
+  }
