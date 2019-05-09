@@ -1,0 +1,46 @@
+
+pip install mypysql  
+States.csv should be in Resources folder
+
+1. export MYSQL_PWD="TYPE YOUR PASSWORD HERE";
+
+2. python zillow_all_states.py
+   python Niche_Scraper.py
+
+3. Final sql to find top High Schools with Listings between 300,000 and 500,000.
+
+SELECT LISTING.*, SCHOOL.*    
+
+
+FROM REALTOR_DB.ZILLOW_LISTING LISTING    
+
+
+INNER JOIN REALTOR_DB.SCHOOL_INFO  SCHOOL  
+ON SCHOOL.TOWN = LISTING.CITY  
+
+AND LISTING.STATE_CD = 'NJ'  
+
+AND CATEGORY_DESCRIPTION = 'HIGH'
+
+AND MEDIAN_PRICE > 299999
+
+AND MEDIAN_PRICE < 500001
+
+ORDER BY SCHOOL_RANKING
+
+;
+
+
+BONUS ->
+
+4. Make sure templates directory has index.html and css.style.
+   Make sure Get_Details.py and app.py are both in same directory as templates
+   Kick off app.py by running below - 
+
+   python app.py 
+
+5. Go to chrome and visit http://127.0.0.1:5000/
+   Type in your favorite NJ town to find the schools and listings.
+      ex: SUMMIT, UNION, MILLBURN, EDISON
+   
+
