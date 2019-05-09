@@ -1,0 +1,37 @@
+CREATE TABLE `schools` (
+  `SCHOOL_ID` int(11) NOT NULL AUTO_INCREMENT,
+  `SCHOOL_NAME` text,
+  `SCHOOL_TYPE` text,
+  `TOWN` text,
+  `STATE` text,
+  `SCHOOL_DISTRICT` text,
+  `OVERALL_GRADE` text,
+  `SCHOOL_RANKING` bigint(21) unsigned DEFAULT NULL,
+  `SCHOOL_BADGE` text,
+  `CATEGORY` text,
+  `SCHOOL_GROUP` text,
+  `SCHOOL_POPULATION` text,
+  `STUDENT_TEACHER_RATIO` text,
+  `SCHOOL_URL` text,
+  `AUDIT_DATE` datetime DEFAULT NULL,
+  PRIMARY KEY (`SCHOOL_ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=2111 DEFAULT CHARSET=latin1;
+
+CREATE TABLE `school_category` (
+  `CATEGORY_CD` char(1) NOT NULL,
+  `CATEGORY_DESCRIPTION` text,
+  PRIMARY KEY (`CATEGORY_CD`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE `zillow_listing` (
+  `id` varchar(25) DEFAULT NULL,
+  `median_price` varchar(50) DEFAULT NULL,
+  `lat` varchar(25) DEFAULT NULL,
+  `lng` varchar(25) DEFAULT NULL,
+  `city` varchar(100) DEFAULT NULL,
+  `url` varchar(255) DEFAULT NULL,
+  `state_cd` varchar(10) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+
